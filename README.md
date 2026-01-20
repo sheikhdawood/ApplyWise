@@ -57,3 +57,73 @@ MongoDB (Memory)
 ↓
 Streamlit Dashboard
 
+---
+
+## 🗂️ Project Structure
+
+autoApplyAgent/
+│
+├── runner.py # Entry point (runs the agent)
+├── main.py # LangGraph graph & AgentState
+│
+├── jobDiscovery.py
+├── resumeIntelligence.py
+├── jobQualityFilter.py
+├── aimlMatching.py
+├── applicationStrategy.py
+├── resumePositioning.py
+├── coverLetter.py
+├── apply.py
+├── trustUpdate.py
+├── hold.py
+├── archive.py
+│
+├── preFilter.py # DB-backed pre-run gate
+│
+├── db/
+│ ├── init.py
+│ ├── client.py # MongoDB connection
+│ └── repositories.py # All DB reads/writes
+│
+├── dashboard/
+│ ├── app.py
+│ └── pages/
+│ ├── Overview
+│ ├── Jobs Explorer
+│ ├── Decisions
+│ ├── Holds
+│ ├── Archives
+│ ├── Applications
+│ ├── Trust
+│ └── Analytics
+│
+├── resumes/
+│ └── sir.pdf
+│
+└── README.md
+
+
+---
+
+## ⚙️ Tech Stack
+
+- **Python 3.11+**
+- **LangGraph** – agent orchestration
+- **MongoDB** – persistent memory
+- **Playwright** – browser automation (optional, gated)
+- **Streamlit** – dashboard & observability
+- **BeautifulSoup / Requests** – job discovery
+- **pdfplumber** – resume parsing
+
+---
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone & Setup
+
+```bash
+git clone https://github.com/yourusername/applywise.git
+cd applywise
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt

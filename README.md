@@ -37,7 +37,7 @@ The system remembers every job it has seen and every decision it has made, ensur
 ---
 
 ## 🏗️ Architecture Overview
-
+```text
 Job Discovery
 ↓
 DB Pre-Filter (Already seen? Archived? Applied?)
@@ -56,11 +56,11 @@ LangGraph Agent
 MongoDB (Memory)
 ↓
 Streamlit Dashboard
-
+```
 ---
 
 ## 🗂️ Project Structure
-
+```text
 autoApplyAgent/
 │
 ├── runner.py # Entry point (runs the agent)
@@ -101,7 +101,7 @@ autoApplyAgent/
 │ └── sir.pdf
 │
 └── README.md
-
+```
 
 ---
 

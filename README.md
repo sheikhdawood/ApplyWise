@@ -38,3 +38,22 @@ The system remembers every job it has seen and every decision it has made, ensur
 
 ## 🏗️ Architecture Overview
 
+Job Discovery
+↓
+DB Pre-Filter (Already seen? Archived? Applied?)
+↓
+LangGraph Agent
+├─ Resume Intelligence
+├─ Job Quality Filter
+├─ AI/ML Matching
+├─ Application Strategy
+├─ Resume Positioning
+├─ Cover Letter Generation
+├─ Apply (optional, trust-gated)
+├─ Trust Update
+├─ Hold / Archive
+↓
+MongoDB (Memory)
+↓
+Streamlit Dashboard
+
